@@ -8,27 +8,52 @@
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Software Developer | GitHub Enthusiast</p>
+        <h1>Yudi Lai</h1>
+        <p>Email:yudi.lai2b@gmail.com | Phone: (209) 561-3322 </p>
     </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>I am a new graduate from the University of California, Davis, with a Bachelor’s degree in Computer Science. I graduated in the Spring of 2024, and during my time at UC Davis, I developed a solid foundation in various areas of computer science, including software development, algorithms, data structures, computer networks, and machine learning.</p>
+        <p>I have hands-on experience in programming languages such as Python, Java, and C#, and I have worked on several projects that have honed my skills in software engineering. My senior capstone project involved developing a socket manager using Python and Linux sockets, which provided me with practical insights into OOP-oriented object programming.</p>
+        <p>I am excited to embark on my professional journey and contribute to innovative projects that make a meaningful impact. I thrive in collaborative environments and am eager to work with a dynamic team where I can leverage my skills and learn from experienced professionals.</p>
+    </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-card">
-            <h3>Project 1</h3>
-            <p>A brief description of Project 1. Explain what it does, the technologies used, and its purpose.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            <h3>Multi-Agent Agricultural Network Module</h3>
+            <img src="capstone_project.png" alt="Showcase poster">
+            <p>This is a senior capstone project. The project delivered an modularized network module that were contracted by the Agricultural Robotic Department of the University of California, Davis. The goal of the project is to design and implement a network module that enables asynchronous bidirectional communications between client's stationed server and multiple edge devices scattered on the field in a mesh topology. The network module is fully encapsulated with an internal Python server to maintain the communication logics and custom message scheme, therefore we also provide the corresponding API for easy user interface.</p>
+            <p>The module was field tested with 14 edge nodes in the vineyard with the consideration of forage obstruction. In an unobstruted setting, a 20 byte message is able to reach 400 ft with closed to 0% package loss, and up to 700ft with one edge node that provides message hopping. It can reach 30-50ft through multiple rows of grape vine.</p>
+            <p>The project is done in a group of four with multiple comonents developed in parallel. While other members worked on the root and edge module of the BLE module and custom PCB, My responsibility was the network server used for caching data periodically updated from the edge nodes and other internal network logic such as disconnection failsafe.  </p>
+            <p>I learned a lot about socket programming such how to apply observer pattern on socket events asynchronously with threads. I also get to practice team working and communication with clients.</p>
+            <p>More detailed documentation can be found in the github page</p>
+            <a href="https://github.com/codecultivatorscrew/Multi-agent-Communication-Network?tab=readme-ov-file" target="_blank">View on GitHub</a>
         </div>
         <div class="project-card">
-            <h3>Project 2</h3>
-            <p>A brief description of Project 2. Mention key features, challenges, and learning outcomes.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+            <h3>3D Top-Down shooter game</h3>
+            <img src="game_project.png" alt="Screenshot of the character movement">
+            <p>We made a 3D unity game in a group of eight. It's a top-down shooter where the player controled character travels across procedurally generated map to reach to the end point While defeating enemy on the way. The game also support online multiplayer.</p>
+            <p>I was responsible for the enemy design and its AI. I separated the enemy logics into multiple states using the state pattern.Those states can be patrol, idle, chase, attack. The range enemy that I designed will adjust its various behavior based on player's action, such as repositioninh when the player is out of sight, detectinh if a plaer jetpacked to a spot that's not reachable by the enemy path finding, and targeting to a different player when condition met</p>
+            <p>I learned a lot about the unity engine and practice object-oriented programming in C#. I learned and apply some of the designed pattern. For example we use observer pattern to implement the health and damage system. This is also the project where I learned how to use Git in a large group setting.</p>
+            <a href="https://github.com/abhiss/symmetrical-octo-waffle" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Income Predictor</h3>
+            <img src="result.png" alt="Result">
+            <p>This is a class project with four other randomly assigned teammates. The goal of the project is to train a model that predict the income given various attribute such as gender, age, and education level.</p>
+            <p>We test out three different training method to produce the best training result. The three training method that we tested were linear regression, neural network, and random forrest. My responsibility were data analysis, training with linear regression and random forest, and result analysis that include many both failed and sucessful attempts to increase the accuracy.</p>
+            <p>I got a chance to go through a full model traning process with some basic machine learning method. I also enjoyed the data analysis part where I get to figure out what attribute is best to be ommited out and various ways to reduce bias. The data analysis and preparation part is where I truly used my critical thinking skill</p>
+            <a href="https://github.com/Zack1243/171-Project-12/blob/main/Main.ipynb" target="_blank">View on GitHub</a>
         </div>
         <!-- Add more projects as needed -->
+        
     </section>
 
     <footer>
-        <p>Connect with me on <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+        <p>Connect with me on <a href="https://github.com/YudiLai33" target="_blank">GitHub</a></p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/yudi-lai/" target="_blank">Linkedin</a></p>
     </footer>
 </body>
 </html>
